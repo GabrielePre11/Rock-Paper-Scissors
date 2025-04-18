@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metatags -->
+    <title>Rock Paper Scissors</title>
+    <meta name="description" content="A simple Rock Paper Scissors game built in HTML, CSS and Vanilla JS.">
+    <meta name="author" content="Gabriele Prestano">
+    <meta name="keywords" content="rock, paper, scissors, game, html, css, javascript">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png"
+        type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Score -->
+    <div class="score-container">
+        <!-- User Score -->
+        <div class="user-point-wrapper">
+            <span class="user-point" data-user-point>0</span>
+            <span class="name">You</span>
+        </div>
+
+        <!-- CPU Score -->
+        <div class="cpu-point-wrapper">
+            <span class="cpu-point" data-cpu-point>0</span>
+            <span class="name">CPU</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="user-choice">User Choice</h2>
+
+        <div class="user-btns-wrapper">
+            <!-- Rock -->
+            <button class="btn" data-choice="rock" aria-label="Rock">
+                <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png" alt="Rock"
+                    class="choice-img">
+            </button>
+
+            <!-- Paper -->
+            <button class="btn" data-choice="paper" aria-label="Paper">
+                <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/paper.png" alt="Paper"
+                    class="choice-img">
+            </button>
+
+            <!-- Scissors -->
+            <button class="btn" data-choice="scissors" aria-label="Scissors">
+                <img src="https://nehalhazem.github.io/rockPaperScissors.io/img/scissors.png" alt="Scissors"
+                    class="choice-img">
+            </button>
+        </div>
+
+        <!-- CPU -->
+        <div class="cpu-wrapper">
+            <h2 class="cpu-choice">CPU Choice</h2>
+            <button class="btn" data-cpu-btn aria-label="CPU Choice" disabled>
+                <img src="https://cdn-icons-png.freepik.com/256/10264/10264119.png?semt=ais_hybrid" alt="CPU"
+                    class="choice-img cpu-img">
+            </button>
+        </div>
+    </div>
+
+    <!-- Final Result Container -->
+    <div class="result-container" data-result>
+        <h1 class="result">RESULT: <span data-result-span>WIN</span></h1>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
